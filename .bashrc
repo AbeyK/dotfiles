@@ -8,6 +8,11 @@ case $- in
       *) return;;
 esac
 
+# Restore commands also provided by macOS using coreutils
+# Fixes MacOS ls spacing issues
+# Requires coreutils
+# alias ls='/usr/local/opt/coreutils/libexec/gnubin/ls'
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
@@ -80,8 +85,8 @@ esac
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
+    alias dir='dir --color=auto'
+    alias vdir='vdir --color=auto'
 
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
@@ -92,6 +97,7 @@ fi
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
+alias ls='ls -t'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
@@ -123,6 +129,9 @@ fi
 
 # vi mode
 set -o vi
+
+# ignore case
+set completion-ignore-case on
 
 # Open specified files in ide
 alias s='open -a "Sublime Text"'
@@ -160,5 +169,5 @@ extract() {
 up() { cd $(eval printf '../'%.0s {1..$1}) && pwd; }
 
 cd() {
-    builtin cd "$@" && ls -a
+    builtin cd "$@" && ls
 }
