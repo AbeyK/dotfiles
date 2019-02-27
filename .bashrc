@@ -77,7 +77,7 @@ xterm*|rxvt*)
 esac
 
 # enable color support of ls and also add handy aliases
-alias ls='ls -t --color=auto'
+alias ls='ls -t --color=auto --quoting-style=literal'
 alias dir='dir --color=auto'
 alias vdir='vdir --color=auto'
 
