@@ -1,0 +1,29 @@
+// VSCode Settings.json
+
+
+//////////////////////////////
+
+// Keyboard Shortcuts
+// View: Split Editor: CMD T
+
+//////////////////////////////
+
+
+{
+
+    "editor.formatOnSave": true,
+    "editor.mouseWheelZoom": true,
+    "C_Cpp.updateChannel": "Insiders",
+    // "editor.formatOnPaste": true,
+    // "editor.formatOnType": true,
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
+    "[javascript]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "window.zoomLevel": -1,
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "editor.lineNumbers": "on",
+    "editor.scrollBeyondLastLine": false
+
+}
