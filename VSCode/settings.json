@@ -1,16 +1,7 @@
-// VSCode Settings.json
-
-
-//////////////////////////////
-
-// Keyboard Shortcuts
-// View: Split Editor: CMD T
-
-//////////////////////////////
-
+// VSCode 
+// settings.json
 
 {
-
     "editor.formatOnSave": true,
     "editor.mouseWheelZoom": true,
     "C_Cpp.updateChannel": "Insiders",
@@ -20,10 +11,14 @@
     "[javascript]": {
         "editor.defaultFormatter": "HookyQR.beautify"
     },
-    "window.zoomLevel": -1,
+    "window.zoomLevel": 1,
     "workbench.editor.enablePreview": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "editor.lineNumbers": "on",
-    "editor.scrollBeyondLastLine": false
-
+    "editor.scrollBeyondLastLine": false,
+    "vim.handleKeys": {
+        "<C-c>": false,
+        "<C-v>": false,
+        "<C-a>": false,
+    }
 }
