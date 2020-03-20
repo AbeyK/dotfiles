@@ -1,94 +1,171 @@
 // VSCode
 // keybindings.json
-
 // Place your key bindings in this file to overwrite the defaults
-
-[{
-    "key": "cmd+d",
-    "command": "workbench.action.splitEditor"
-},
-{
-    "key": "cmd+t",
-    "command": "workbench.action.terminal.toggleTerminal"
-},
-{
-    "key": "shift+cmd+d",
-    "command": "workbench.action.splitEditorDown"
-},
-{
-    "key": "cmd+h",
-    "command": "workbench.action.navigateLeft"
-},
-{
-    "key": "cmd+l",
-    "command": "workbench.action.navigateRight"
-},
-{
-    "key": "cmd+k",
-    "command": "workbench.action.navigateUp"
-},
-{
-    "key": "cmd+j",
-    "command": "workbench.action.navigateDown"
-},
-{
-    "key": "cmd+0",
-    "command": "workbench.action.openLastEditorInGroup"
-},
-{
-    "key": "cmd+1",
-    "command": "workbench.action.openEditorAtIndex1"
-},
-{
-    "key": "cmd+2",
-    "command": "workbench.action.openEditorAtIndex2"
-},
-{
-    "key": "cmd+3",
-    "command": "workbench.action.openEditorAtIndex3"
-},
-{
-    "key": "cmd+4",
-    "command": "workbench.action.openEditorAtIndex4"
-},
-{
-    "key": "cmd+5",
-    "command": "workbench.action.openEditorAtIndex5"
-},
-{
-    "key": "cmd+6",
-    "command": "workbench.action.openEditorAtIndex6"
-},
-{
-    "key": "cmd+7",
-    "command": "workbench.action.openEditorAtIndex7"
-},
-{
-    "key": "cmd+8",
-    "command": "workbench.action.openEditorAtIndex8"
-},
-{
-    "key": "cmd+9",
-    "command": "workbench.action.openEditorAtIndex9"
-},
-{
-    "key": "ctrl+1",
-    "command": "workbench.action.focusFirstEditorGroup"
-},
-{
-    "key": "ctrl+2",
-    "command": "workbench.action.focusSecondEditorGroup"
-},
-{
-    "key": "ctrl+3",
-    "command": "workbench.action.focusThirdEditorGroup"
-},
-{
-    "key": "ctrl+4",
-    "command": "workbench.action.focusFourthEditorGroup"
-},
-{
-    "key": "ctrl+5",
-    "command": "workbench.action.focusFifthEditorGroup"
-}
+[
+    {
+        "key": "cmd+`",
+        "command": "workbench.action.navigateEditorGroups"
+    },
+    {
+        "key": "cmd+n",
+        "command": "workbench.action.splitEditor"
+    },
+    {
+        "key": "cmd+t",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "cmd+h",
+        "command": "workbench.action.navigateLeft"
+    },
+    {
+        "key": "cmd+l",
+        "command": "workbench.action.navigateRight"
+    },
+    {
+        "key": "cmd+1",
+        "command": "workbench.action.openEditorAtIndex1"
+    },
+    {
+        "key": "cmd+2",
+        "command": "workbench.action.openEditorAtIndex2"
+    },
+    {
+        "key": "cmd+3",
+        "command": "workbench.action.openEditorAtIndex3"
+    },
+    {
+        "key": "cmd+4",
+        "command": "workbench.action.openEditorAtIndex4"
+    },
+    {
+        "key": "cmd+5",
+        "command": "workbench.action.openEditorAtIndex5"
+    },
+    {
+        "key": "cmd+6",
+        "command": "workbench.action.openEditorAtIndex6"
+    },
+    {
+        "key": "cmd+7",
+        "command": "workbench.action.openEditorAtIndex7"
+    },
+    {
+        "key": "cmd+8",
+        "command": "workbench.action.openEditorAtIndex8"
+    },
+    {
+        "key": "cmd+9",
+        "command": "workbench.action.openEditorAtIndex9"
+    },
+    {
+        "key": "ctrl+1",
+        "command": "workbench.action.focusFirstEditorGroup"
+    },
+    {
+        "key": "ctrl+2",
+        "command": "workbench.action.focusSecondEditorGroup"
+    },
+    {
+        "key": "ctrl+3",
+        "command": "workbench.action.focusThirdEditorGroup"
+    },
+    {
+        "key": "ctrl+4",
+        "command": "workbench.action.focusFourthEditorGroup"
+    },
+    {
+        "key": "ctrl+5",
+        "command": "workbench.action.focusFifthEditorGroup"
+    },
+    {
+        "key": "cmd+i",
+        "command": "fb-hg.toggle-interactive-smartlog"
+    },
+    {
+        "key": "cmd+k",
+        "command": "workbench.action.editor.previousChange",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+j",
+        "command": "workbench.action.editor.nextChange",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+n",
+        "command": "workbench.action.terminal.split",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+0",
+        "command": "workbench.action.lastEditorInGroup"
+    },
+    {
+        "key": "cmd+9",
+        "command": "-workbench.action.lastEditorInGroup"
+    },
+    {
+        "key": "cmd+l",
+        "command": "workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+h",
+        "command": "workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+w",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+d",
+        "command": "fb-hg.diff"
+    },
+    {
+        "key": "shift+cmd+d",
+        "command": "fb-hg.diffStack"
+    },
+    {
+        "key": "shift+alt+f3",
+        "command": "-editor.action.dirtydiff.previous",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+f3",
+        "command": "-editor.action.dirtydiff.next",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+j",
+        "command": "workbench.action.compareEditor.nextChange",
+        "when": "textCompareEditorVisible"
+    },
+    {
+        "key": "alt+f5",
+        "command": "-workbench.action.compareEditor.nextChange",
+        "when": "textCompareEditorVisible"
+    },
+    {
+        "key": "cmd+k",
+        "command": "workbench.action.compareEditor.previousChange",
+        "when": "textCompareEditorVisible"
+    },
+    {
+        "key": "shift+alt+f5",
+        "command": "-workbench.action.compareEditor.previousChange",
+        "when": "textCompareEditorVisible"
+    },
+    {
+        "key": "shift+cmd+k",
+        "command": "-editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+cmd+j",
+        "command": "-workbench.action.search.toggleQueryDetails",
+        "when": "inSearchEditor || searchViewletVisible"
+    },
 ]
